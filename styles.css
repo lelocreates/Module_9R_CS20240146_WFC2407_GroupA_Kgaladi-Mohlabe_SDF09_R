@@ -1,0 +1,35 @@
+:root{
+    --gold: goldenrod;
+    --textcolor: white;
+    --button: #016f32;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(images\table.png);
+    background-size: cover;
+    text-align: center;
+    color: var(--textcolor);
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--gold);
+}
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    color: var(--button);
+    background-color: var(--gold);
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border:none;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
