@@ -1,13 +1,10 @@
-// 1. Create two variables, firstCard and secondCard. 
-// Set their values to a random number between 2-11
-
-// 2. Create a variable, sum, and set it to the sum of the two cards
+// Defining variables //
 
 let firstCard = 6
 let secondCard = 9
 let sum = firstCard + secondCard
 
-let hasBlackJack = false
+let hasBlackJack = false 
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
@@ -15,6 +12,11 @@ let sumEl = document.getElementById("#sum-el")
 let cardsEl = document.getElementById("#cards-el")
 
 // Defining game logic //
+// 
+// if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
+// else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
+// else -> "You're out of the game! 😭" .//
+
 
 function startGame() {
     renderGame()
