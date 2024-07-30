@@ -30,7 +30,7 @@ function renderGame() {
     // if less than or equal to 20 -> "Do you want to draw a new card? 🙂"
     // else if exactly 21 -> "Wohoo! You've got Blackjack! 🥳"
     // else -> "You're out of the game! 😭" .//
-    if (sum <= 20){ 
+    if (sum <= 20) { 
         message= "Do you want to draw a new card"
     } else if (sum === 21 ) {
         message= "You've got Blackjack!"
@@ -39,8 +39,10 @@ function renderGame() {
         message= "You're out of the game!"
         isAlive = false
     }
+    messageEl.textContent = message
 }
 
+// Function to add new game when a new card is required
 function newCard() {
     console.log("Drawing a new card from the deck!")
     let card = 7
@@ -49,4 +51,4 @@ function newCard() {
 }
 
 
-messageEl.textContent = message
+

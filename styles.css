@@ -1,12 +1,18 @@
 :root{
-    --gold: goldenrod;
+    /* Colours for the items styled (make all colour changes here) */
+    --titlecolor: goldenrod;
     --textcolor: white;
-    --button: #016f32;
+    --buttontext: #016f32;
+    --bgcolor: #016f32;
+    --btncolor: goldenrod;
+
 }
 
 body {
+    /*styling for everything in the body -background uses an image*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(IMG/table.png);
+    background-color: var(--bgcolor);
     background-size: cover;
     text-align: center;
     color: var(--textcolor);
@@ -14,16 +20,18 @@ body {
 }
 
 h1 {
-    color: var(--gold);
+    color: var(--titlecolor);
 }
 
+/* Add italic style to p with id="message-el" */
 #message-el {
     font-style: italic;
 }
 
+/* Styling for buttons */
 button {
-    color: var(--button);
-    background-color: var(--gold);
+    color: var(--buttontext);
+    background-color: var(--btncolor);
     width: 150px;
     padding-top: 5px;
     padding-bottom: 5px;
