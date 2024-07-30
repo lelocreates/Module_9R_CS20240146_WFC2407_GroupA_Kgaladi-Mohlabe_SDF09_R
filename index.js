@@ -1,5 +1,5 @@
 // Defining variables
- 
+
 // Card number variables 
 let firstCard = 6
 let secondCard = 9
@@ -9,9 +9,11 @@ let sum = firstCard + secondCard
 let hasBlackJack = false 
 let isAlive = true
 
-
+// Variables for Game win/loss/new card draw messages 
 let message = ""
 let messageEl = document.getElementById("message-el")
+
+// Variables for sum and card messages 
 let sumEl = document.getElementById("#sum-el")
 let cardsEl = document.getElementById("#cards-el")
 
