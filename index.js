@@ -71,10 +71,12 @@ function renderGame() {
 // Function to add new game when a new card is required
 function newCard() {
     console.log("Drawing a new card from the deck!")
-    let card = getRandomCard()
-    sum += card
-    cards.push(card) //pushes cards to cards array
-    renderGame()
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card) //pushes cards to cards array
+        renderGame()
+    }
 }
 
 
