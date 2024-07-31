@@ -15,8 +15,16 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 
 // Variables for sum and card messages 
-let sumEl = document.getElementById("#sum-el")
-let cardsEl = document.getElementById("#cards-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+// Variables for player name and chips inside an object called Player
+let player = {
+    name: "",
+    chips: 0
+}
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": R" + player.chips
 
 //function renders a random card number
 function getRandomCard() {
