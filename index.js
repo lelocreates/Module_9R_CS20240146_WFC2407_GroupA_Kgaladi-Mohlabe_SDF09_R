@@ -1,10 +1,11 @@
 // Defining variables
 
 // Card number variables 
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
+//let firstCard = getRandomCard()
+//let secondCard = getRandomCard()
 let cards = [] 
 let sum = 0
+
 
 // Variables that determine the state of the game 
 let hasBlackJack = false 
@@ -20,7 +21,7 @@ let cardsEl = document.getElementById("cards-el")
 
 // Variables for player name and chips inside an object called Player
 let player = {
-    name: "",
+    name: "Lelo",
     chips: 0
 }
 let playerEl = document.getElementById("player-el")
@@ -28,9 +29,11 @@ playerEl.textContent = player.name + ": R" + player.chips
 
 //function renders a random card number
 function getRandomCard() {
-    let randomNum = Math.floor(Math.random * 14)
+    let randomNum = Math.floor(Math.random() * 13) + 1
     // 1 must always return 11 and jack, Queen and king must all return 10
-    if (randomNum === 1) {
+    if (randomNum === 0) {
+        return getRandomCard()
+    } else if (randomNum === 1) {
         return 11
     } else if (randomNum > 10) {
         return 10
@@ -40,12 +43,12 @@ function getRandomCard() {
 }
 
 // Defining game logic with startGame and renderGame function //
-// function thaat starts a new game 
+// function that starts a new game 
 function startGame() {
     // Reassign varible to show the start of the game 
     isAlive = true
-    let firstCard = getRandomCard()
-    let secondCard = getRandomCard()
+    firstCard = getRandomCard()
+    secondCard = getRandomCard()
     cards = [firstCard, secondCard] 
     sum = firstCard + secondCard
     renderGame()
