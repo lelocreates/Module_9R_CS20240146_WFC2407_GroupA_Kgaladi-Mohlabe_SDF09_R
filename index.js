@@ -3,7 +3,7 @@
 // Card number variables 
 //let firstCard = getRandomCard()
 //let secondCard = getRandomCard()
-let cards = [] 
+let cards = []
 let sum = 0
 
 
